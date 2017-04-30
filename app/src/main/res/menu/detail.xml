@@ -14,21 +14,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <color name="colorPrimary">#03A9F4</color>
-    <color name="colorPrimaryDark">#0288D1</color>
-    <color name="colorAccent">#FFD740</color>
-    <color name="colorPrimaryLight">#B3E5FC</color>
+<!-- the menu found in the single day forecast detail -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.sunshine.DetailActivity">
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        android:title="@string/action_share"
+        app:showAsAction="always"/>
 
-    <color name="white">#FFFFFF</color>
-
-    <color name="primary_text">#212121</color>
-    <color name="secondary_text">#727272</color>
-
-     <!--our detail accent colors -->
-    <color name="detail_accent_pane_background">#455A64</color>
-    <color name="detail_accent_label">#90A4AE</color>
-
-    <!-- the activated state color for a forecast list item -->
-    <color name="activated">#E0E0E0</color>
-</resources>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
